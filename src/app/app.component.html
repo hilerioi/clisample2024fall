@@ -1,0 +1,24 @@
+<div class="container  mat-app-background">
+  <p>
+  <mat-toolbar color='primary'>
+    <button class="example-icon" mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <button class="example-icon" mat-icon-button aria-label="Example icon-button with menu icon">
+      <mat-menu #menu="matMenu">
+        <div mat-menu-item>Item 1</div>
+        <div mat-menu-item>Item 2</div>
+      </mat-menu>
+    </button>
+    <span>To Do App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>share</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>help</mat-icon>
+    </button>
+  </mat-toolbar>
+  </p>
+<router-outlet />
+</div>
